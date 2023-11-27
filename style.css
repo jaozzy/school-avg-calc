@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #495057;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#calc {
+    width: 80vw;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15% auto; /* Centraliza verticalmente e alinha horizontalmente */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Importante para incluir o padding e a borda no cálculo do tamanho total do elemento */
+    overflow: hidden; /* Pode ajudar a evitar que o conteúdo vaze para fora da div */
+    position: relative; /* Define o posicionamento para permitir ajustes */
+    top: 0; /* Certifica-se de que a posição superior seja zero */
+}
+
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    margin-bottom: -25px;
+}
+
+.logo-csj {
+    width: 210px;
+}
+
+input[type='number'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    border-radius: 4px;
+    outline: none;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #212529;
+}
+
+#final {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#creditos {
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    margin-top: -15px;
+    width: 4%;
+}
+
+a {
+    width: 24px;
+    height: 24px;
+}
+
+/* Media query para dispositivos com largura máxima de 768px (tamanho de um tablet ou celular em modo paisagem) */
+@media screen and (max-width: 768px) {
+    #calc {
+        width: 90vw; /* Ou outro valor adequado para dispositivos menores */
+        max-width: none; /* Remove a largura máxima definida anteriormente */
+        margin-top: 0; /* Redefine a margem superior */
+        margin-bottom: 0; /* Redefine a margem inferior */
+        padding: 10px; /* Ajusta o preenchimento para se adequar ao tamanho do dispositivo */
+    }
+}
+
+/* Media query para dispositivos com largura máxima de 600px (tamanho de um celular em modo retrato) */
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 120%;
+    }
+    
+    #calc {
+        width: 90%; /* Aumenta a largura para 90% da largura do dispositivo */
+        max-width: 470px; /* Define um tamanho máximo para a largura */
+        margin: 15% auto; /* Centraliza verticalmente e alinha horizontalmente */
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box; /* Importante para incluir o padding no cálculo do tamanho total do elemento */
+    }
+
+    .main {
+        display: flex; /* Usa flexbox para alinhar verticalmente */
+        flex-direction: column; /* Ajusta a direção da coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        margin-top: -30px;
+    }
+
+    h4 {
+        font-size: 110%;        
+    }
+
+    img {
+        width: 10%;
+    }
+        
+}

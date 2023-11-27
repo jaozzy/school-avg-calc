@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="https://saojose.com.br/wp-content/uploads/2019/08/cropped-logo_csj_header-32x32.png" sizes="32x32"/>
+    <title>Calculadora de Médias e Recuperação Final CSJ</title>
+</head>
+<body>
+
+    <main>
+
+        <div id="calc">
+
+            <div id="info">
+                <img src="img/logo_csj.png" alt="logo-csj" class="logo-csj">
+                <h2>Calculadora de Médias e Recuperação Final CSJ</h2>
+            </div>
+
+            <div id="creditos">
+                <h4>Desenvolvido por: João Pedro 202 / 2023</p>
+                <a href="http://github.com/jaozzy" target="_blank" rel="noopener noreferrer"><img src="img/github.svg" alt="github"></a>
+            </div>
+    
+            <div id="1t">
+                <h1>Primeiro Trimestre:</h1>
+                <label for="n1-1t">Experienciar:</label>
+                <input type="number" name="n1-t1" id="n1-1t" placeholder="Nota do Percurso Experienciar" min="0" max="10">
+                <label for="n2-1t">Conceituar:</label>
+                <input type="number" name="n2-t1" id="n2-1t" placeholder="Nota do Percurso Conceituar" min="0" max="10">
+                <label for="n3-1t">Protagonizar:</label>
+                <input type="number" name="n3-t1" id="n3-1t" placeholder="Nota do Percurso Protagonizar" min="0" max="10">
+                <label for="recp-1t">Recuperação Paralela:</label>
+                <input type="number" name="recp-1t" id="recp-1t" placeholder="Nota da Recuperação Trimestral" min="0" max="10">
+                <label for="sim-1t">Simulado:</label>
+                <input type="number" name="sim-t1" id="sim-1t" placeholder="Nota do Simulado" min="0" max="1">
+    
+                <table>
+                    <th>Média:</th>
+                    <td id="media-1t">0.00</td>
+                </table>
+    
+            </div>
+    
+            <hr>
+    
+            <div>
+                <h1>Segundo Trimestre:</h1>
+                <label for="n1-2t">Experienciar:</label>
+                <input type="number" name="n1-t2" id="n1-2t" placeholder="Nota do Percurso Experienciar" min="0" max="10">
+                <label for="n2-2t">Conceituar:</label>
+                <input type="number" name="n2-t2" id="n2-2t" placeholder="Nota do Percurso Conceituar" min="0" max="10">
+                <label for="n3-2t">Protagonizar:</label>
+                <input type="number" name="n3-t2" id="n3-2t" placeholder="Nota do Percurso Protagonizar" min="0" max="10">
+                <label for="recp-2t">Recuperação Paralela:</label>
+                <input type="number" name="recp-2t" id="recp-2t" placeholder="Nota da Recuperação Trimestral" min="0" max="10">
+                <label for="sim-2t">Simulado:</label>
+                <input type="number" name="sim-t2" id="sim-2t" class="form-control bg-tertiary" placeholder="Nota do Simulado" min="0" max="1">
+    
+                <table>
+                    <th>Média:</th>
+                    <td id="media-2t">0.00</td>
+                </table>
+    
+            </div>
+    
+            <hr>
+    
+            <div>
+    
+                <h1>Terceiro Trimestre:</h1>
+                <label for="n1-3t">Experienciar:</label>
+                <input type="number" name="n1-t3" id="n1-3t" placeholder="Nota do Percurso Experienciar" min="0" max="10">
+                <label for="n2-3t">Conceituar:</label>
+                <input type="number" name="n2-t3" id="n2-3t" placeholder="Nota do Percurso Conceituar" min="0" max="10">
+                <label for="n3-3t">Protagonizar:</label>
+                <input type="number" name="n3-t3" id="n3-3t" placeholder="Nota do Percurso Protagonizar" min="0" max="10">
+                <label for="recp-3t">Recuperação Paralela:</label>
+                <input type="number" name="recp-3t" id="recp-3t" placeholder="Nota da Recuperação Trimestral" min="0" max="10">
+                <label for="sim-3t">Simulado:</label>
+                <input type="number" name="sim-t3" id="sim-3t" placeholder="Nota do Simulado" min="0" max="1">
+    
+                <table>
+                    <th>Média:</th>
+                    <td id="media-3t">0.00</td>
+                </table>
+    
+            </div>
+    
+            <div id="final" style="display: none;">
+                <table>
+                    <th>Situação:</th>
+                    <td id="resultado"></td>
+                    <th>Média Anual:</th>
+                    <td id="media-anual"></td>
+                </table>
+        
+                <div id="rec" style="display: none;">
+                    <table>
+                        <th>Nota necessária para passar na recuperação final: </th>
+                        <td id="nota-nec">0.00</td>
+                    </table>
+                </div>
+
+            </div>
+    
+        </div>
+
+    </main>
+
+</body>
+
+<script src="/script.js"></script>
+
+</html>
