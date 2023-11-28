@@ -20,7 +20,7 @@ h2 {
 }
 
 #calc {
-    width: 60vw;
+    width: 80vw;
     padding: 20px;
     border-radius: 8px;
     margin: 15% auto; /* Centraliza verticalmente e alinha horizontalmente */
@@ -69,8 +69,19 @@ table {
 
 table th,
 table td {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
     padding: 8px;
     border-bottom: 1px solid #ddd;
+}
+
+table th {
+    text-align: left;
+}
+
+table td {
+    text-align: right;
 }
 
 button {
