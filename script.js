@@ -52,20 +52,42 @@ function atualizarMedia(trimestre) {
 // Função para calcular a média anual
 function calcularMediaAnual() {
     // Coletando notas
-    const n1t1 = parseFloat(document.getElementById('n1-1t').value) || 0;
-    const n2t1 = parseFloat(document.getElementById('n2-1t').value) || 0;
+    let n1t1 = parseFloat(document.getElementById('n1-1t').value) || 0;
+    let n2t1 = parseFloat(document.getElementById('n2-1t').value) || 0;
     const n3t1 = parseFloat(document.getElementById('n3-1t').value) || 0;
     const simt1 = parseFloat(document.getElementById('sim-1t').value) || 0;
+    const recpt1 = parseFloat(document.getElementById('recp-1t').value) || 0;
 
-    const n1t2 = parseFloat(document.getElementById('n1-2t').value) || 0;
-    const n2t2 = parseFloat(document.getElementById('n2-2t').value) || 0;
+    if (recpt1 > n1t1) {
+        n1t1 = recpt1;
+    } else if (recpt1 > n2t1) {
+        n2t1 = recpt1;
+    }
+
+
+    let n2t2 = parseFloat(document.getElementById('n2-2t').value) || 0;
+    let n1t2 = parseFloat(document.getElementById('n1-2t').value) || 0;
     const n3t2 = parseFloat(document.getElementById('n3-2t').value) || 0;
     const simt2 = parseFloat(document.getElementById('sim-2t').value) || 0;
+    const recpt2 = parseFloat(document.getElementById('recp-2t').value) || 0;
 
-    const n1t3 = parseFloat(document.getElementById('n1-3t').value) || 0;
-    const n2t3 = parseFloat(document.getElementById('n2-3t').value) || 0;
+    if (recpt2 > n1t2) {
+        n1t2 = recp2t2;
+    } else if (recpt2 > n2t2) {
+        n2t2 = recpt2;
+    }
+
+    let n1t3 = parseFloat(document.getElementById('n1-3t').value) || 0;
+    let n2t3 = parseFloat(document.getElementById('n2-3t').value) || 0;
     const n3t3 = parseFloat(document.getElementById('n3-3t').value) || 0;
     const simt3 = parseFloat(document.getElementById('sim-3t').value) || 0;
+    const recpt3 = parseFloat(document.getElementById('recp-3t').value) || 0;
+
+    if (recpt3 > n1t3) {
+        n1t3 = recpt3;
+    } else if (recpt3 > n2t3) {
+        n2t3 = recpt3;
+    }
 
     const m1 = (((n1t1 + n2t1 + n3t1) / 3) + simt1);
     const m2 = (((n1t2 + n2t2 + n3t2) / 3) + simt2);
