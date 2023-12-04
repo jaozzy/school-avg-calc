@@ -72,7 +72,7 @@ function calcularMediaAnual() {
     const recpt2 = parseFloat(document.getElementById('recp-2t').value) || 0;
 
     if (recpt2 > n1t2) {
-        n1t2 = recp2t2;
+        n1t2 = recpt2;
     } else if (recpt2 > n2t2) {
         n2t2 = recpt2;
     }
@@ -127,16 +127,12 @@ function calcularRecuperacao(ma) {
     document.getElementById('nota-nec').textContent = nr.toFixed(2);
 }
 
-// Função para mostrar o resultado
-function mostrarResultado() {
-    validarMedia();
-}
-
 // Adicionando eventos de input para todos os campos de notas em cada trimestre
 ['1t', '2t', '3t'].forEach(trimestre => {
     ['n1', 'n2', 'n3', 'recp', 'sim'].forEach(nota => {
         document.getElementById(`${nota}-${trimestre}`).addEventListener('input', () => {
             atualizarMedia(trimestre);
+            validarMedia();
         });
     });
 });
