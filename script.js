@@ -58,9 +58,9 @@ function calcularMediaAnual() {
     const simt1 = parseFloat(document.getElementById('sim-1t').value) || 0;
     const recpt1 = parseFloat(document.getElementById('recp-1t').value) || 0;
 
-    if (recpt1 > n1t1) {
+    if ((n1t1 < 7) && (recpt1 > n1t1)) {
         n1t1 = recpt1;
-    } else if (recpt1 > n2t1) {
+    } else if ((n2t1 < 7) && (recpt1 > n2t1)) {
         n2t1 = recpt1;
     }
 
@@ -71,9 +71,9 @@ function calcularMediaAnual() {
     const simt2 = parseFloat(document.getElementById('sim-2t').value) || 0;
     const recpt2 = parseFloat(document.getElementById('recp-2t').value) || 0;
 
-    if (recpt2 > n1t2) {
+    if ((n1t2 < 7) && (recpt2 > n1t2)) {
         n1t2 = recpt2;
-    } else if (recpt2 > n2t2) {
+    } else if ((n2t2 < 7) && (recpt2 > n2t2)) {
         n2t2 = recpt2;
     }
 
@@ -83,9 +83,9 @@ function calcularMediaAnual() {
     const simt3 = parseFloat(document.getElementById('sim-3t').value) || 0;
     const recpt3 = parseFloat(document.getElementById('recp-3t').value) || 0;
 
-    if (recpt3 > n1t3) {
+    if ((n1t3 < 7) && (recpt3 > n1t3)) {
         n1t3 = recpt3;
-    } else if (recpt3 > n2t3) {
+    } else if ((n2t3 < 7) && (recpt3 > n2t3)) {
         n2t3 = recpt3;
     }
 
